@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# Array of dark phrases
+phrases=(
+    "We are dust in the wind."
+    "Life is a cruel joke."
+    "Darkness within us is strong."
+    "Hope leads to disappointment."
+    "We are our worst enemies."
+    "In the end, we face the void."
+    "Trust is an illusion."
+    "A World Built On Fantasy."
+    "Truth is rarely pure."
+    "Humanity is a plague."
+    "We are dust."
+    "Life is cruel."
+    "Darkness within."
+    "Hope breeds pain."
+    "We are our foes."
+    "Face the void."
+    "Trust is fake."
+    "World of lies."
+    "Truth is rare."
+    "Humanity suffers."
+    "Monsters inside."
+    "Society feasts."
+    "Masks we wear."
+    "Puppets on strings."
+    "Selfish by nature."
+    "Shadows whisper."
+    "Isolated in crowds."
+    "Smiles hide pain."
+    "We build despair."
+    "Dreams turn to ash."
+    "Silence screams loud."
+    "Fate is a cruel hand."
+    "Love is a trap."
+    "Hope is a burden."
+    "Fear is our master."
+    "Life is a prison."
+    "We are lost souls."
+    "Chaos reigns supreme."
+    "Truth cuts deep."
+    "We are broken."
+    "Despair is our friend."
+    "The end is near."
+    "We wear our scars."
+    "Time is a thief."
+    "Reality is a nightmare."
+)
+
+# Select a random phrase
+random_phrase=${phrases[RANDOM % ${#phrases[@]}]}
+
+# Output the phrase
+echo "$random_phrase"
