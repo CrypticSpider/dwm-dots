@@ -35,7 +35,7 @@ To set up my dwm configuration, follow these steps:
    Copy the configuration files to the appropriate directories:
 
 ```bash
-cp -R dwm/* ~/.config/dwm/
+cp -R dwm/* ~/.config/dwm/ \
 cp -R dwmblocks/* ~/.config/dwmblocks/
 ```
 
