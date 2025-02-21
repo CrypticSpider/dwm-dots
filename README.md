@@ -14,6 +14,14 @@ Welcome to the `dwm-dots` repository! This project contains my personal configur
   - Status bar enhancements
   - Custom layouts
 
+# Install Dwm
+
+**We Use Void So We Install Using Xbps:)**
+
+```bash
+sudo xbps-install dwm -y
+```
+
 ## Installation
 
 ### Automatic:
