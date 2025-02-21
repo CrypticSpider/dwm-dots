@@ -1,0 +1,10 @@
+#!/bin/bash
+
+status=$(nmcli device status | grep ethernet | awk '{print $3}')
+icon=""
+
+if [ "$status" = "connected" ]; then
+    icon="🌐"  # Use a globe icon for connected
+fi
+
+echo "$icon"
