@@ -48,7 +48,13 @@ cd ~/.config/dwmblocks/ \
 make clean install
 ```
 
-4. **Restart dwm**:
+5. **Use .xinitrc If You Don't Use Display Manager**
+
+```bash
+cp .xinitrc ~/
+```
+
+6. **Restart dwm**:
    Restart dwm to apply the new configuration and enjoy your dark-themed setup!
    You can restart by doing CTRL + Q(related on configuration)
 
