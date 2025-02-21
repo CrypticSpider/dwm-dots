@@ -73,7 +73,16 @@ make clean install
 cp .xinitrc ~/
 ```
 
-6. **Restart dwm**:
+6. _If You Use .xinitrc, Then You Can Run It When Your Shell Starti_:
+   **Add The Following To You .shellnamerc**
+
+```bash
+if [[ `tty` == '/dev/tty1' ]]; then
+    startx
+    fi
+```
+
+7. **Restart dwm**:
    Restart dwm to apply the new configuration and enjoy your dark-themed setup!
    You can restart by doing CTRL + Q(related on configuration)
 
