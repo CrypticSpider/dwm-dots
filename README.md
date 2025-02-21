@@ -22,7 +22,8 @@ Welcome to the `dwm-dots` repository! This project contains my personal configur
 chmod +x install.sh && ./install.sh
 ```
 
-##Install Manualy:
+## Install Manualy:
+
 To set up my dwm configuration, follow these steps:
 
 1. **Clone the Repository**:
