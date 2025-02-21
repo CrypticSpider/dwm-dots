@@ -1,6 +1,5 @@
 ![Screenshot of my DWM setup](images/2025-02-21-173756_1920x1080_scrot.png)
 ![Another view of my DWM setup](images/2025-02-21-174435_1920x1080_scrot.png)
-![Banner](images/2025-02-21-174435_1920x1080_scrot.png)
 
 # Dwm-Dots
 
