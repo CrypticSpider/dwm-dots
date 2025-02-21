@@ -17,12 +17,15 @@ Welcome to the `dwm-dots` repository! This project contains my personal configur
   - Status bar enhancements
   - Custom layouts
 
-# Install Dwm
+#Dependencies:
+You Will Need **Slock** For Screen Locker And The **Dwm** Package Installed.
+
+# Install Dependencies
 
 **We Use Void So We Install Using Xbps:)**
 
 ```bash
-sudo xbps-install dwm -y
+sudo xbps-install dwm slock -y
 ```
 
 ## Installation
