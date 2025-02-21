@@ -17,7 +17,8 @@ Welcome to the `dwm-dots` repository! This project contains my personal configur
   - Status bar enhancements
   - Custom layouts
 
-#Dependencies:
+# Dependencies:
+
 You Will Need **Slock** For Screen Locker And The **Dwm** Package Installed.
 
 # Install Dependencies
