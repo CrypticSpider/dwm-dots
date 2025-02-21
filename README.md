@@ -79,7 +79,7 @@ cp .xinitrc ~/
 ```bash
 if [[ `tty` == '/dev/tty1' ]]; then
     startx
-    fi
+fi
 ```
 
 7. **Restart dwm**:
