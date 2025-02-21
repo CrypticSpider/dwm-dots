@@ -19,21 +19,21 @@ To use my dwm configuration, follow these steps:
    git clone https://github.com/CrypticSpider/dwm-dots.git
    cd dwm-dots
    ```
-
-````
 2. **Copy Configuration Files**:
-Copy the configuration files to your home directory or the appropriate location in your dwm setup. For example:
+   Copy the configuration files to your home directory or the appropriate location in your dwm setup. For example:
+
 ```bash
 cp -r * ~/.config/dwm/
-````
+```
 
-\*\*Compile dwm:
-If you haven't already, compile dwm with the new configuration:
+3. **Compile dwm**:
+   If you haven't already, compile dwm with the new configuration:
 
 ```
 cd /path/to/dwm
 make clean install
 ```
 
-#Restart dwm:
+# Restart dwm:
+
 Restart dwm to apply the new configuration.
