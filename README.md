@@ -27,7 +27,6 @@ To set up my dwm configuration, follow these steps:
    Copy the configuration files to the appropriate directories:
 
 ```bash
-<<<<<<< HEAD
 cp -R dwm/ ~/.config/
 cp -R dwmblocks/* ~/.config/dwmblocks/
 ```
@@ -46,29 +45,12 @@ cd ~/.config/dwm/ \
 make clean install \
 
 cd ~/.config/dwmblocks/ \
-=======
-cp -r * ~/.config/dwm/
-cp -r dwmblocks/* ~/.config/dwmblocks/
-```
-
-3. **Compile dwm and dwmblocks**:
-   If you haven't already, compile both dwm and dwmblocks with the new configurations:
-
-```bash
-cd /path/to/dwm
-make clean install
-
-cd /path/to/dwmblocks
->>>>>>> b15e97518848ac58f8ab643e7ea4bab098ed6fb5
 make clean install
 ```
 
 4. **Restart dwm**:
    Restart dwm to apply the new configuration and enjoy your dark-themed setup!
-<<<<<<< HEAD
    You can restart by doing CTRL + Q(related on configuration)
-=======
->>>>>>> b15e97518848ac58f8ab643e7ea4bab098ed6fb5
 
 # Usage
 

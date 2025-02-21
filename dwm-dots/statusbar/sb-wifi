@@ -1,9 +1,0 @@
-#!/bin/sh
-
-connected_ssid=$(nmcli -t -f active,ssid dev wifi | grep '^yes' | cut -d':' -f2)
-
-if [ -n "$connected_ssid" ]; then
-    echo "🌐 $connected_ssid"  # Display the icon and SSID
-else
-    echo "Not connected"  # Not connected message
-fi
