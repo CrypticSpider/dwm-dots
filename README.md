@@ -1,5 +1,10 @@
 # dwm-dots
 
+# ScreenShot :
+
+![Screenshot of my DWM setup](images/2025-02-21-173756_1920x1080_scrot.png)
+![Another view of my DWM setup](images/2025-02-21-174435_1920x1080_scrot.png)
+
 ## Overview
 
 Welcome to the `dwm-dots` repository! This project contains my personal configuration files for [dwm](https://dwm.suckless.org/), a dynamic window manager for X11, along with a customized setup for `dwmblocks`. My configuration is designed to provide a sleek, dark-themed environment that enhances productivity and visual appeal.
@@ -78,8 +83,3 @@ cp .xinitrc ~/
 
 **Keybindings**: Utilize the custom keybindings to manage windows efficiently. Refer to the configuration file for a complete list of keybindings.
 **Status Bar**: The dwmblocks status bar will display real-time information, including system stats and notifications. Customize the scripts in the dwmblocks directory to modify what is displayed.
-
-# ScreenShot :
-
-![Screenshot of my DWM setup](images/2025-02-21-173756_1920x1080_scrot.png)
-![Another view of my DWM setup](images/2025-02-21-174435_1920x1080_scrot.png)
