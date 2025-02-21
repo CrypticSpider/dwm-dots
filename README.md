@@ -23,14 +23,13 @@ To set up my dwm configuration, follow these steps:
    git clone https://github.com/CrypticSpider/dwm-dots.git
    cd dwm-dots
    ```
+2. **Copy Configuration Files**:
+   Copy the configuration files to the appropriate directories:
 
-````
-2. Copy **Configuration Files**:
-Copy the configuration files to the appropriate directories:
 ```bash
 cp -r * ~/.config/dwm/
 cp -r dwmblocks/* ~/.config/dwmblocks/
-````
+```
 
 3. **Compile dwm and dwmblocks**:
    If you haven't already, compile both dwm and dwmblocks with the new configurations:
@@ -54,3 +53,4 @@ make clean install
 # ScreenShot :
 
 ![Screenshot of my DWM setup](images/2025-02-21-173756_1920x1080_scrot.png)
+![Another view of my DWM setup](images/2025-02-21-174435_1920x1080_scrot.png)
