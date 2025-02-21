@@ -73,7 +73,7 @@ make clean install
 cp .xinitrc ~/
 ```
 
-6. _If You Use .xinitrc, Then You Can Run It When Your Shell Starti_:
+6. If You Use .xinitrc, Then You Can Run It When Your Shell Starti\_:
    **Add The Following To You .shellnamerc**
 
 ```bash
