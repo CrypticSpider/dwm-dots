@@ -5,6 +5,6 @@ if ! curl -s https://google.com &>/dev/null; then
     exit 1;
 fi 
 # Fetch weather information from wttr.in
-weather=$(curl -s wttr.in/Zanjan?format=3)
+weather=$(curl -s wttr.in/Zanjan?format=3) # change the city name to your city.
 # # Output the weather information
 echo "$weather"
