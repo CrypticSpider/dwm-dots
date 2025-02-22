@@ -16,8 +16,9 @@ Welcome to the `dwm-dots` repository! This project contains my personal configur
   - Floating windows
   - Status bar enhancements
   - Custom layouts
+  - Some Shell Scripts For System Status
 
-# Dependencies:
+# Dependencies
 
 You Will Need **Slock** For Screen Locker And The **Dwm** Package Installed.
 
