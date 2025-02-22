@@ -31,13 +31,13 @@ sudo xbps-install dwm slock -y
 
 ## Installation
 
-### Automatic:
+### Automatic
 
 ```bash
-chmod +x install.sh && ./install.sh
+curl -sSL https://raw.githubusercontent.com/CrypticSpider/dwm-dots/main/install.sh | bash
 ```
 
-## Install Manualy:
+## Install Manualy
 
 To set up my dwm configuration, follow these steps:
 
@@ -78,7 +78,7 @@ cp .xinitrc ~/
 ```
 
 6. If You Use .xinitrc, Then You Can Run It When Your Shell Start:
-   **Add The Following To You .shellnamerc**
+   **Add The Following To Your .shellnamerc**
 
 ```bash
 if [[ `tty` == '/dev/tty1' ]]; then
@@ -88,7 +88,7 @@ fi
 
 7. **Restart dwm**:
    Restart dwm to apply the new configuration and enjoy your dark-themed setup!
-   You can restart by doing CTRL + Q(related on configuration)
+   You can restart by doing WIN + Q(related on configuration)
 
 # Usage
 
