@@ -72,22 +72,20 @@ cd ~/.config/dwmblocks/ \
 make clean install
 ```
 # Start Dwm With New Configs
-## Use **.xinitrc** If You Don't Use Display Manager
+**Use .xinitrc If You Don't Use Display Manager**
 
 ```bash
 cp .xinitrc ~/
 ```
-
-# If You Use .xinitrc, Then You Can Run Dwm When Your Shell Start:
-   **Add The Following To Your .shellnamerc**
-
+**If You Use .xinitrc, Then You Can Run Dwm When Your Shell Start**
+   Add The Following To Your .shellnamerc:
 ```bash
 if [[ `tty` == '/dev/tty1' ]]; then
     startx
 fi
 ```
 
-# Now Restart dwm And Enjoy New Config
+### Now Restart dwm And Enjoy New Config
    Restart dwm to apply the new configuration and enjoy your dark-themed setup!
    You can restart by doing WIN + Q(related on configuration)
 
