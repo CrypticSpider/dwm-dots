@@ -78,6 +78,7 @@ make clean install
 cp .xinitrc ~/
 ```
 **If You Want Use .xinitrc, Then You Can Run Dwm When Your Shell Start**
+
    Add The Following To Your .shellnamerc:
 ```bash
 if [[ `tty` == '/dev/tty1' ]]; then
