@@ -99,7 +99,14 @@ You can restart by doing WIN + Q(related on configuration)
 cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
 ```
 
+### For Font Install The JetBrainsMonoNL Font And Then Selecte It In The Konsole Configuration.
+
 # Usage
 
 **Keybindings**: Utilize the custom keybindings to manage windows efficiently. Refer to the configuration file for a complete list of keybindings.
-**Status Bar**: The dwmblocks status bar will display real-time information, including system stats and notifications. Customize the scripts in the dwmblocks directory to modify what is displayed.
+Launch Terminal By Doing WIN + x.
+Launch Rofi By Doint WIN + r.
+Full Screen By Doing WIN + m.
+Launch FireFox Browser By Doing WIN + b.
+Exit Dwm By Doing WIN + Q.
+**Status Bar**: The dwmblocks status bar will display real-time information, including system stats and notifications And Some Words. Customize the scripts in the dwmblocks directory and the ~/.local/bin/statusbar directory to modify what is displayed.
