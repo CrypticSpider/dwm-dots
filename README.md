@@ -20,14 +20,14 @@ Welcome to the `dwm-dots` repository! This project contains my personal configur
 
 # Dependencies
 
-You Will Need **Slock** For Screen Locker And The **Dwm** Package Installed.
+You Will Need **Slock** For Screen Locker And The **Dwm** Package And Konsole Terminal Installed(i need Konsole because it has good support for rtl language)
 
 # Install Dependencies
 
 **We Use Void So We Install Using Xbps:)**
 
 ```bash
-sudo xbps-install dwm slock -y
+sudo xbps-install dwm slock konsole -y
 ```
 
 ## Installation
@@ -52,7 +52,7 @@ To set up my dwm configuration, follow these steps:
 
 ```bash
 mkdir -p ~/.config/dwm/ \
-mkdir -p ~/.config/dwmblocks/ \ 
+mkdir -p ~/.config/dwmblocks/ \
 cp -R dwm/* ~/.config/dwm/ \
 cp -R dwmblocks/* ~/.config/dwmblocks/
 ```
@@ -69,15 +69,19 @@ mkdir -p ~/.local/bin/ && cp -R statusbar/ ~/.local/bin/
 ```bash
 make -C ~/.config/dwm clean install && make -C ~/.config/dwmblocks clean install
 ```
+
 # Start Dwm With New Configs
+
 **Use .xinitrc If You Don't Use Display Manager**
 
 ```bash
 cp .xinitrc ~/
 ```
+
 **If You Want Use .xinitrc, Then You Can Run Dwm When Your Shell Start**
 
-   Add The Following To Your .shellnamerc:
+Add The Following To Your .shellnamerc:
+
 ```bash
 if [[ `tty` == '/dev/tty1' ]]; then
     startx
@@ -85,8 +89,9 @@ fi
 ```
 
 ### Now Restart dwm And Enjoy New Config
-   Restart dwm to apply the new configuration and enjoy your dark-themed setup!
-   You can restart by doing WIN + Q(related on configuration)
+
+Restart dwm to apply the new configuration and enjoy your dark-themed setup!
+You can restart by doing WIN + Q(related on configuration)
 
 # Usage
 
