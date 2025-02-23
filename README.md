@@ -103,7 +103,3 @@ cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
 
 **Keybindings**: Utilize the custom keybindings to manage windows efficiently. Refer to the configuration file for a complete list of keybindings.
 **Status Bar**: The dwmblocks status bar will display real-time information, including system stats and notifications. Customize the scripts in the dwmblocks directory to modify what is displayed.
-
-```
-
-```
