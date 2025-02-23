@@ -70,6 +70,14 @@ mkdir -p ~/.local/bin/ && cp -R statusbar/ ~/.local/bin/
 make -C ~/.config/dwm clean install && make -C ~/.config/dwmblocks clean install
 ```
 
+### Customize Konsole Terminal To A Better Dark Theme.
+
+```bash
+cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
+```
+
+For Font Install The JetBrainsMonoNL Font And Then Selecte It In The Konsole Configuration.
+
 # Start Dwm With New Configs
 
 **Use .xinitrc If You Don't Use Display Manager**
@@ -88,15 +96,7 @@ if [[ `tty` == '/dev/tty1' ]]; then
 fi
 ```
 
-### Customize Konsole Terminal To A Better Dark Theme.
-
-```bash
-cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
-```
-
-For Font Install The JetBrainsMonoNL Font And Then Selecte It In The Konsole Configuration.
-
-### Now Restart dwm And Enjoy New Config
+### Now Restart dwm And Enjoy New Config(by Doing WIN + Q)
 
 Restart dwm to apply the new configuration and enjoy your dark-themed setup!
 You can restart by doing WIN + Q(related on configuration)
