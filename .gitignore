@@ -1,4 +1,4 @@
 .upti*
 .RE*
-./statusbar/.*
+statusbar/.*
 .install*
