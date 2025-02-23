@@ -99,7 +99,7 @@ You can restart by doing WIN + Q(related on configuration)
 cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
 ```
 
-### For Font Install The JetBrainsMonoNL Font And Then Selecte It In The Konsole Configuration.
+For Font Install The JetBrainsMonoNL Font And Then Selecte It In The Konsole Configuration.
 
 # Usage
 
