@@ -78,11 +78,11 @@ cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
 
 For Font Install The JetBrainsMonoNL Font And Then Selecte It In The Konsole Configuration.
 
-## Changeing The Default Terminal
+## Changing The Default Terminal
 
-**you can change this line in the config file to define your desired terminal**:
+**You Can Change This Line In The Config File To Define Your Desired Terminal**:
 
-**edit the ~/.config/dwm/config.h**
+**Edit the ~/.config/dwm/config.h**
 
 ```bash
 static const char \*termcmd[] = { "konsole", NULL }; # change konsole to any terminal you use.
