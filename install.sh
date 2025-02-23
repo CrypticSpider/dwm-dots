@@ -8,7 +8,9 @@ check_err() {
         echo "Succes"
     fi
 }
-git clone https://github.com/CrypticSpider/dwm-dots.git ; check_err && cd dwm-dots \
+git clone https://github.com/CrypticSpider/dwm-dots.git ; check_err && cd dwm-dots \  
+    mkdir -p ~/.config/dwm/ \ 
+    mkdir -p ~/.config/dwmblocks/ \ 
     cp -R dwm/* ~/.config/dwm/;check_err \
     cp -R dwmblocks/* ~/.config/demblocks/; check_err \
     cp -R statusbar/ ~/.local/bin/; check_err \
