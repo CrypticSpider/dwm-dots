@@ -88,11 +88,6 @@ if [[ `tty` == '/dev/tty1' ]]; then
 fi
 ```
 
-### Now Restart dwm And Enjoy New Config
-
-Restart dwm to apply the new configuration and enjoy your dark-themed setup!
-You can restart by doing WIN + Q(related on configuration)
-
 ### Customize Konsole Terminal To A Better Dark Theme.
 
 ```bash
@@ -100,6 +95,11 @@ cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
 ```
 
 For Font Install The JetBrainsMonoNL Font And Then Selecte It In The Konsole Configuration.
+
+### Now Restart dwm And Enjoy New Config
+
+Restart dwm to apply the new configuration and enjoy your dark-themed setup!
+You can restart by doing WIN + Q(related on configuration)
 
 # Usage
 
