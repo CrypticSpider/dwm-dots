@@ -103,10 +103,20 @@ cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
 
 # Usage
 
-**Keybindings**: Utilize the custom keybindings to manage windows efficiently. Refer to the configuration file for a complete list of keybindings.
-Launch Terminal By Doing WIN + x.
-Launch Rofi By Doint WIN + r.
-Full Screen By Doing WIN + m.
-Launch FireFox Browser By Doing WIN + b.
-Exit Dwm By Doing WIN + Q.
-**Status Bar**: The dwmblocks status bar will display real-time information, including system stats and notifications And Some Words. Customize the scripts in the dwmblocks directory and the ~/.local/bin/statusbar directory to modify what is displayed.
+## Keybindings
+
+Utilize the custom keybindings to manage windows efficiently. Refer to the configuration file for a complete list of keybindings.
+
+**Launch Terminal By Doing WIN + x.**
+
+**Launch Rofi By Doint WIN + r.**
+
+**Full Screen By Doing WIN + m.i**
+
+**Launch FireFox Browser By Doing WIN + b.**
+
+**Exit Dwm By Doing WIN + Q.**
+
+## Status Bar
+
+The dwmblocks status bar will display real-time information, including system stats and notifications And Some Words. Customize the scripts in the dwmblocks directory and the ~/.local/bin/statusbar directory to modify what is displayed.
