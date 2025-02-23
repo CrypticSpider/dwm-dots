@@ -67,11 +67,7 @@ mkdir -p ~/.local/bin/ && cp -R statusbar/ ~/.local/bin/
    If you haven't already, compile both dwm and dwmblocks with the new configurations:
 
 ```bash
-cd ~/.config/dwm/ \
-make clean install \
-
-cd ~/.config/dwmblocks/ \
-make clean install
+make -C ~/.config/dwm clean install && make -C ~/.config/dwmblocks clean install
 ```
 # Start Dwm With New Configs
 **Use .xinitrc If You Don't Use Display Manager**
