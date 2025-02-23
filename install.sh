@@ -16,7 +16,7 @@ git clone https://github.com/CrypticSpider/dwm-dots.git ; check_err && cd dwm-do
     cp -R dwm/* ~/.config/dwm/;check_err \
     cp -R dwmblocks/* ~/.config/demblocks/; check_err \
     cp -R statusbar/ ~/.local/bin/; check_err \
-make -C ~/.config/dwm clean install && make -C ~/.config/dwmblocks clean install; check_err
+    make -C ~/.config/dwm clean install && make -C ~/.config/dwmblocks clean install; check_err
 }
 change-terminal(){
     read -rp "Do You Want To Change The Default Terminal?" change_terminal
@@ -27,7 +27,7 @@ change-terminal(){
         echo "canseld."
     fi
 }
-read -rp "Do You Want To Install The configuration? y/n :" dwm_config
+read -rp "Do You Want To Install The Configuration? y/n :" dwm_config
 if [ "$dwm_config" == 'y' ]; then
     install-dwm
 elif
@@ -44,7 +44,7 @@ fi
     elif [ "$konsole_theme" == 'n' ]; then
        :
    fi
-read -rp "Do you want to use .xinirc? y/n :" REPLY
+read -rp "Do You Want To Use .xinirc? y/n :" REPLY
 if [ "$REPLY" == 'y' ]; then
     cp .xinirc ~/
 elif [ "$REPLY" == n ]; then 
