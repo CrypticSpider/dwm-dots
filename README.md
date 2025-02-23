@@ -93,7 +93,17 @@ fi
 Restart dwm to apply the new configuration and enjoy your dark-themed setup!
 You can restart by doing WIN + Q(related on configuration)
 
+### Customize Konsole Terminal To A Better Dark Theme.
+
+```bash
+cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
+```
+
 # Usage
 
 **Keybindings**: Utilize the custom keybindings to manage windows efficiently. Refer to the configuration file for a complete list of keybindings.
 **Status Bar**: The dwmblocks status bar will display real-time information, including system stats and notifications. Customize the scripts in the dwmblocks directory to modify what is displayed.
+
+```
+
+```
