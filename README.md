@@ -78,13 +78,17 @@ cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
 
 For Font Install The JetBrainsMonoNL Font And Then Selecte It In The Konsole Configuration.
 
-### You Can Change The Default Terminal Emulator Or Anything Else In ~/.config/dwm/config.h and then recompile it again.
+## Changeing The Default Terminal
 
-**for exmple you can change this line in the config file to define your desired terminal**:
+**you can change this line in the config file to define your desired terminal**:
+
+**edit the ~/.config/dwm/config.h**
 
 ```bash
 static const char \*termcmd[] = { "konsole", NULL }; # change konsole to any terminal you use.
 ```
+
+**Feel Free To Customize Anything There:)**
 
 # Start Dwm With New Configs
 
