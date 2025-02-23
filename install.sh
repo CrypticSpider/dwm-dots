@@ -34,7 +34,8 @@ fi
 read -rp "Do you want to use .xinirc? y/n :" REPLY
 if [ "$REPLY" == 'y' ]; then
     cp .xinirc ~/
-else
+elif [ "$REPLY" == n ]; then 
+    echo "Canseld" 
     echo "Install Finished"
 fi
-# sex +x
+# set +x
