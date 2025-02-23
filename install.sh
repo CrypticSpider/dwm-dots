@@ -18,12 +18,25 @@ git clone https://github.com/CrypticSpider/dwm-dots.git ; check_err && cd dwm-do
     cp -R statusbar/ ~/.local/bin/; check_err \
 make -C ~/.config/dwm clean install && make -C ~/.config/dwmblocks clean install; check_err
 }
+change-terminal(){
+    read -rp "Do You Want To Change The Default Terminal?" change_terminal
+    if [ "$change_terminal" = 'y' ]; then
+        read -rp "enter Your terminal Name Here :" TERMINAL_NAME
+        sed -i "s/konsole/$TERMINAL_NAME/g" ~/.config/dwm/config.h
+    elif [ "$change_terminal"  == 'n' ]; then
+        echo "canseld."
+    fi
+}
 read -rp "Do You Want To Install The configuration? y/n :" dwm_config
 if [ "$dwm_config" == 'y' ]; then
     install-dwm
 elif
     [ "$dwm_config" == 'n' ]; then
     echo "Canseld"
+fi
+change-terminal
+if [ "$change_terminal" == 'n' ]; then
+    :
 fi
     read -rp "Do You Want To Install Custom Dark Theme For Konsole? y/n :" konsole_theme
     if [ "$konsole_theme" == 'y' ]; then
