@@ -67,10 +67,10 @@ CHANGE_TERMINAL()
                       elif [ "$TERMINAL_CHANGE"  == 'n' ]; then
                         echo "Canseld."
                           fi
-}
+                           }
 
-INSTALL_PICOM()
-{
+                            INSTALL_PICOM()
+                             {
                               read -rp "Do You Wanna To Copy New Configuration For Picom?" PICOM_INSTALL
                                 if [ "$PICOM_INSTALL" == 'y' ]; then
                                   if [ -d ~/.config/picom ]; then
@@ -79,7 +79,7 @@ INSTALL_PICOM()
                                   elif [ "$PICOM_INSTALL" == 'n' ]; then
                                 echo "Canseld."
                                fi
-}
+                              }
 
                            read -rp "Do You Want To Install Dependencis? y/n : " DEPN_INSTALL
                          if [ "$DEPN_INSTALL" == 'y' ]; then
