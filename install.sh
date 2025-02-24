@@ -1,18 +1,20 @@
-#!/bin/bash
+#!/bin/bash - 
 # Install My Dwm dot
 # Author: CrypticSpider
 # set -x
 check_err() {
-    if [[ $? -ne 0  ]]; then
-        echo "Failed"
+if [[ $? -ne 0  ]]; then
+      echo "Failed"
     else
-        echo "Succes"
-    fi
+      echo "Succes"
+fi
 }
 INSTALL_DEP()
 {
+    echo "WARNING!"
+    echo "SCRIPT WILL ASK FOR USER PASSWORD FOR ROOT PERMISSION!"
     read -pr "Do You Wanna To Install All Deps For Configuration?" DEP_INSTALL
-    case $DEP_INSTALL in
+case $DEP_INSTALL in
           y)
             if command -v pacman; then
             sudo pacman -Sy base-devel \
