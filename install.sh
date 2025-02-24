@@ -89,16 +89,20 @@ elif
     [ "$DWM_CONFIG" == 'n' ]; then
     echo "Canseld"
 fi
+
 CHANGE_TERMINAL
+
 if [ "$TERMINAL_CHANGE" == 'n' ]; then
     :
 fi
+
     read -rp "Do You Want To Install Custom Dark Theme For Konsole? y/n :" KONSOLE_THEME
 if [ "$KONSOLE_THEME" == 'y' ]; then
         cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
 elif [ "$KONSOLE_THEME" == 'n' ]; then
        :
 fi
+
 read -rp "Do You Want To Use .xinirc? y/n :" REPLY
 if [ "$REPLY" == 'y' ]; then
      cp .xinirc ~/
