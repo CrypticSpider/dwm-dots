@@ -2,13 +2,15 @@
 # Install My Dwm Configurations And Dependencis.
 # Author: CrypticSpider.
 # set -x
-CHECK_ERR() {
+CHECK_ERR()
+{
 if [[ $? -ne 0  ]]; then
       echo "Failed"
    else
       echo "Succes"
 fi
 }
+
 INSTALL_DEP()
 {
   echo "WARNING!"
@@ -38,7 +40,9 @@ case $DEP_INSTALL in
              ;;
 esac
 }
-INSTALL_DWM() {
+
+INSTALL_DWM()
+{
 git clone https://github.com/CrypticSpider/dwm-dots.git ; CHECK_ERR && cd dwm-dots || exit; 
     mkdir -p ~/.config/dwm/ \
     mkdir -p ~/.config/dwmblocks/ \
@@ -47,7 +51,9 @@ git clone https://github.com/CrypticSpider/dwm-dots.git ; CHECK_ERR && cd dwm-do
     cp -R statusbar/ ~/.local/bin/; CHECK_ERR \
     make -C ~/.config/dwm clean install && make -C ~/.config/dwmblocks clean install; CHECK_ERR
 }
-CHANGE_TERMINAL(){
+
+CHANGE_TERMINAL()
+{
         read -rp "Do You Want To Change The Default Terminal?" TERMINAL_CHANGE
     if [ "$TERMINAL_CHANGE" = 'y' ]; then
         read -rp "enter Your terminal Name Here :" TERMINAL_NAME
@@ -56,7 +62,9 @@ CHANGE_TERMINAL(){
         echo "canseld."
     fi
 }
-INSTALL_PICOM() {
+
+INSTALL_PICOM()
+{
     read -pr "Do You Wanna To Copy New Configuration For Picom?" PICOM_INSTALL
   if [ "$PICOM_INSTALL" == 'y' ]; then
   if [ -d ~/.config/picom ]; then
@@ -66,21 +74,29 @@ fi
     :
 fi
 }
-read -rp "Do You Want To Install The Configuration? y/n :" dwm_config
-if [ "$dwm_config" == 'y' ]; then
+
+read -pr "Do You Want To Install Dependencis? y/n : " DEPN_INSTALL
+if [ "$DEPN_INSTALL" == 'y' ]; then
+    INSTALL_DEP
+elif [ "$DEPN_INSTALL"  == 'n' ]; then
+    :
+fi
+
+read -rp "Do You Want To Copy The Configuration? y/n :" DWM_CONFIG
+if [ "$DWM_CONFIG" == 'y' ]; then
     INSTALL_DWM
 elif
-    [ "$dwm_config" == 'n' ]; then
+    [ "$DWM_CONFIG" == 'n' ]; then
     echo "Canseld"
 fi
 CHANGE_TERMINAL
 if [ "$TERMINAL_CHANGE" == 'n' ]; then
     :
 fi
-    read -rp "Do You Want To Install Custom Dark Theme For Konsole? y/n :" konsole_theme
-if [ "$konsole_theme" == 'y' ]; then
+    read -rp "Do You Want To Install Custom Dark Theme For Konsole? y/n :" KONSOLE_THEME
+if [ "$KONSOLE_THEME" == 'y' ]; then
         cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
-elif [ "$konsole_theme" == 'n' ]; then
+elif [ "$KONSOLE_THEME" == 'n' ]; then
        :
 fi
 read -rp "Do You Want To Use .xinirc? y/n :" REPLY
