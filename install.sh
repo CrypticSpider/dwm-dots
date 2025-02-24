@@ -17,7 +17,7 @@ INSTALL_DEP()
   echo "SCRIPT WILL ASK FOR USER PASSWORD FOR ROOT PERMISSION!"
   read -pr "Do You Wanna To Install All Deps For Configuration?" DEP_INSTALL
 case $DEP_INSTALL in
-          y)
+           y)
             if command -v pacman; then
             sudo pacman -Sy base-devel \
             dwm slock konsole make cmake git curl
