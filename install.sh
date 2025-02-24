@@ -2,7 +2,7 @@
 # Install My Dwm dot
 # Author: CrypticSpider
 # set -x
-check_err() {
+CHECK_ERR() {
 if [[ $? -ne 0  ]]; then
       echo "Failed"
     else
@@ -39,13 +39,13 @@ case $DEP_INSTALL in
 esac
 }
 INSTALL_DWM() {
-git clone https://github.com/CrypticSpider/dwm-dots.git ; check_err && cd dwm-dots || exit; 
+git clone https://github.com/CrypticSpider/dwm-dots.git ; CHECK_ERR && cd dwm-dots || exit; 
     mkdir -p ~/.config/dwm/ \
     mkdir -p ~/.config/dwmblocks/ \
-    cp -R dwm/* ~/.config/dwm/;check_err \
-    cp -R dwmblocks/* ~/.config/demblocks/; check_err \
-    cp -R statusbar/ ~/.local/bin/; check_err \
-    make -C ~/.config/dwm clean install && make -C ~/.config/dwmblocks clean install; check_err
+    cp -R dwm/* ~/.config/dwm/;CHECK_ERR \
+    cp -R dwmblocks/* ~/.config/demblocks/; CHECK_ERR \
+    cp -R statusbar/ ~/.local/bin/; CHECK_ERR \
+    make -C ~/.config/dwm clean install && make -C ~/.config/dwmblocks clean install; CHECK_ERR
 }
 CHANGE_TERMINAL(){
     read -rp "Do You Want To Change The Default Terminal?" TERMINAL_CHANGE
