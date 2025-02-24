@@ -1,19 +1,19 @@
 #!/bin/bash - 
-# Install My Dwm dot
-# Author: CrypticSpider
+# Install My Dwm Configurations And Dependencis.
+# Author: CrypticSpider.
 # set -x
 CHECK_ERR() {
 if [[ $? -ne 0  ]]; then
       echo "Failed"
-    else
+   else
       echo "Succes"
 fi
 }
 INSTALL_DEP()
 {
-    echo "WARNING!"
-    echo "SCRIPT WILL ASK FOR USER PASSWORD FOR ROOT PERMISSION!"
-    read -pr "Do You Wanna To Install All Deps For Configuration?" DEP_INSTALL
+  echo "WARNING!"
+  echo "SCRIPT WILL ASK FOR USER PASSWORD FOR ROOT PERMISSION!"
+  read -pr "Do You Wanna To Install All Deps For Configuration?" DEP_INSTALL
 case $DEP_INSTALL in
           y)
             if command -v pacman; then
@@ -48,7 +48,7 @@ git clone https://github.com/CrypticSpider/dwm-dots.git ; CHECK_ERR && cd dwm-do
     make -C ~/.config/dwm clean install && make -C ~/.config/dwmblocks clean install; CHECK_ERR
 }
 CHANGE_TERMINAL(){
-    read -rp "Do You Want To Change The Default Terminal?" TERMINAL_CHANGE
+        read -rp "Do You Want To Change The Default Terminal?" TERMINAL_CHANGE
     if [ "$TERMINAL_CHANGE" = 'y' ]; then
         read -rp "enter Your terminal Name Here :" TERMINAL_NAME
         sed -i "s/konsole/$TERMINAL_NAME/g" ~/.config/dwm/config.h
@@ -78,11 +78,11 @@ if [ "$TERMINAL_CHANGE" == 'n' ]; then
     :
 fi
     read -rp "Do You Want To Install Custom Dark Theme For Konsole? y/n :" konsole_theme
-    if [ "$konsole_theme" == 'y' ]; then
+if [ "$konsole_theme" == 'y' ]; then
         cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
-    elif [ "$konsole_theme" == 'n' ]; then
+elif [ "$konsole_theme" == 'n' ]; then
        :
-   fi
+fi
 read -rp "Do You Want To Use .xinirc? y/n :" REPLY
 if [ "$REPLY" == 'y' ]; then
      cp .xinirc ~/
