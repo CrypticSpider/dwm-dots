@@ -81,6 +81,27 @@ elif [ "$PICOM_INSTALL" == 'n' ]; then
 fi
 }
 
+ALSA_AUDIO()
+{
+    read -rp "Do You Use Alsa For Audio Server? y/n :" ALSA_CONF
+    case $ALSA_CONF in
+           y)
+           read -rp "Do You Want To Use My Custom .asoundrc For Using Only Alsa As Audio Server? y/n :" ALSA_COPY
+           if [ "$ALSA_COPY" == 'y' ]; then
+               cp -vf .asoundrc ~/.asoundrc
+           elif [ "$ALSA_COPY" == 'n' ]; then
+               echo "I Canseld It"
+           fi
+           ;;
+       n)
+           echo "Ok I Cansedl It."
+           ;;
+       *)
+           ;;
+   esac
+          
+}
+
 read -rp "Do You Want To Install Dependencis? y/n : " DEPN_INSTALL
 if [ "$DEPN_INSTALL" == 'y' ]; then
      INSTALL_DEP
@@ -98,13 +119,14 @@ fi
 
 CHANGE_TERMINAL
 
-
     read -rp "Do You Want To Install Custom Dark Theme For Konsole? y/n :" KONSOLE_THEME
 if [ "$KONSOLE_THEME" == 'y' ]; then
         cp -v konsole-themes/One\ Dark\ Color.colorscheme ~/.local/share/konsole/
 elif [ "$KONSOLE_THEME" == 'n' ]; then
     echo "canseld"
 fi
+
+ALSA_AUDIO
 
 read -rp "Do You Want To Use .xinirc? y/n :" REPLY
 if [ "$REPLY" == 'y' ]; then

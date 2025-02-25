@@ -98,6 +98,14 @@ mkdir -p ~/.config/picom/
 cp -rv picom/* ~/.config/picom/
 ```
 
+# If You Use Alsa As Audio Server:
+
+You Can Use My .asoundrc Config, Works Fine On ThinkPad
+
+```bash
+cp -fv .asoundrc ~/
+```
+
 # Start Dwm With New Configs
 
 **Use .xinitrc If You Don't Use Display Manager**
