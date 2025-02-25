@@ -1,0 +1,35 @@
+# ~/.asoundrc
+
+# Deep Buffer Device (required for multi-stream)
+pcm.deepbuffer {
+    type hw
+    card sofhdadsp
+    device 31
+}
+
+# High-Quality dmix using Deep Buffer
+pcm.dmix_hq {
+    type dmix
+    ipc_key 2048
+    slave {
+        pcm "deepbuffer"
+        format S24_3LE      # 24-bit audio
+        rate 48000          # Force 48kHz
+        period_size 2048    # Compromise for stability
+        buffer_size 16384   # Large buffer for quality
+    }
+}
+
+# Final Output with Format Conversion
+pcm.!default {
+    type plug
+    slave.pcm {
+        type softvol       # Add software volume control
+        slave.pcm "dmix_hq"
+        control {
+            name "Master"
+            card sofhdadsp
+        }
+    }
+    route_policy "copy"    # Preserve channel mapping
+}
