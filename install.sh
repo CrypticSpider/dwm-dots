@@ -55,46 +55,46 @@ git clone https://github.com/CrypticSpider/dwm-dots.git ; CHECK_ERR && cd dwm-do
 CHANGE_TERMINAL()
 {
     read -rp "Do You Want To Change The Default Terminal?" TERMINAL_CHANGE
-     if [ "$TERMINAL_CHANGE" = 'y' ]; then
-       read -rp "enter Your terminal Name Here :" TERMINAL_NAME
-         if ! command -v "$TERMINAL_NAME" &>/dev/null; then
-           echo "You Terminal Does Not Exist!" 
-             exit 127
-               fi
-                 if command -v "$TERMINAL_NAME" &>/dev/null; then
-                   sed -i "s/konsole/$TERMINAL_NAME/g" ~/.config/dwm/config.h
-                     fi
-                      elif [ "$TERMINAL_CHANGE"  == 'n' ]; then
-                        echo "Canseld."
-                          fi
-                           }
+    if [ "$TERMINAL_CHANGE" = 'y' ]; then
+    read -rp "enter Your terminal Name Here :" TERMINAL_NAME
+    if ! command -v "$TERMINAL_NAME" &>/dev/null; then
+    echo "You Terminal Does Not Exist!" 
+    exit 127
+    fi
+    if command -v "$TERMINAL_NAME" &>/dev/null; then
+    sed -i "s/konsole/$TERMINAL_NAME/g" ~/.config/dwm/config.h
+    fi
+    elif [ "$TERMINAL_CHANGE"  == 'n' ]; then
+    echo "Canseld."
+    fi
+}
 
-                            INSTALL_PICOM()
-                             {
-                              read -rp "Do You Wanna To Copy New Configuration For Picom?" PICOM_INSTALL
-                                if [ "$PICOM_INSTALL" == 'y' ]; then
-                                  if [ -d ~/.config/picom ]; then
-                                   cp -rv picom/* ~/.config/picom
-                                    fi
-                                  elif [ "$PICOM_INSTALL" == 'n' ]; then
-                                echo "Canseld."
-                               fi
-                              }
-
-                           read -rp "Do You Want To Install Dependencis? y/n : " DEPN_INSTALL
-                         if [ "$DEPN_INSTALL" == 'y' ]; then
-                       INSTALL_DEP
-                    elif [ "$DEPN_INSTALL"  == 'n' ]; then
-                  echo "Canseld."
-                fi
-
-            read -rp "Do You Want To Copy The Configuration? y/n :" DWM_CONFIG
-          if [ "$DWM_CONFIG" == 'y' ]; then
-        INSTALL_DWM
-      elif
-    [ "$DWM_CONFIG" == 'n' ]; then
+INSTALL_PICOM()
+{
+read -rp "Do You Wanna To Copy New Configuration For Picom?" PICOM_INSTALL
+if [ "$PICOM_INSTALL" == 'y' ]; then
+if [ -d ~/.config/picom ]; then
+   cp -rv picom/* ~/.config/picom
+fi
+elif [ "$PICOM_INSTALL" == 'n' ]; then
    echo "Canseld."
-  fi
+fi
+}
+
+read -rp "Do You Want To Install Dependencis? y/n : " DEPN_INSTALL
+if [ "$DEPN_INSTALL" == 'y' ]; then
+     INSTALL_DEP
+elif [ "$DEPN_INSTALL"  == 'n' ]; then
+     echo "Canseld."
+fi
+
+read -rp "Do You Want To Copy The Configuration? y/n :" DWM_CONFIG
+if [ "$DWM_CONFIG" == 'y' ]; then
+INSTALL_DWM
+elif
+[ "$DWM_CONFIG" == 'n' ]; then
+echo "Canseld."
+fi
 
 CHANGE_TERMINAL
 
