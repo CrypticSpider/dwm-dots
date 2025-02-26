@@ -20,17 +20,17 @@ case $DEP_INSTALL in
            y)
             if command -v pacman; then
             sudo pacman -Sy base-devel \
-            dwm slock konsole make cmake git curl
+            dwm slock konsole make feh cmake git curl
             fi
             if command -v xbps-install; then
                 sudo xbps-install -S base-devel libX11-devel libXft-devel \
-                libXinerama-devel freetype-devel fontconfig-devel dwm slock konsole make cmake git curl -y
+                libXinerama-devel freetype-devel fontconfig-devel feh dwm slock konsole make cmake git curl -y
             fi
             if command -v apt; then
-                sudo apt install dwm slock konsole make cmake git curl -y 
+                sudo apt install dwm slock konsole feh make cmake git curl -y 
             fi
             if command -v pkg; then
-            doas pkg install slock konsole make cmake git curl
+            doas pkg install slock konsole feh make cmake git curl
             fi
              ;;
            n)
