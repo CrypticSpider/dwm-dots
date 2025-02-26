@@ -27,7 +27,7 @@ You Will Need **Slock** For Screen Locker And The **Dwm** Package And Konsole Te
 **We Use Void So We Install Using Xbps:)**
 
 ```bash
-sudo xbps-install base-devel libX11-devel libXft-devel libXinerama-devel freetype-devel fontconfig-devel dwm slock konsole make cmake git curl picom -y # Picom And Slock Is Not Nessury But They Are So Good.
+sudo xbps-install base-devel libX11-devel libXft-devel libXinerama-devel freetype-devel fontconfig-devel dwm slock konsole make cmake git curl picom feh -y # Picom And Slock Is Not Nessury But They Are So Good.
 ```
 
 ## Installation
